@@ -44,13 +44,15 @@
   @media(min-width:720px){.pillars{grid-template-columns:repeat(4,1fr)}}
 
   /* Sections */
-  section{padding:46px 0 10px}
+  section{padding:46px 0 10px;scroll-margin-top:58px}
   h2{font-size:clamp(22px,4.5vw,28px);color:var(--green);font-weight:800;margin-bottom:6px}
   .sub{color:var(--muted);margin-bottom:22px}
 
   /* Newsletter pages */
-  .pages{display:grid;gap:22px}
-  figure{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 22px rgba(29,79,55,.10)}
+  .pages{display:grid;gap:14px;width:100%;max-width:1400px;margin:0 auto}
+  figure{background:#fff;overflow:hidden;box-shadow:0 6px 22px rgba(29,79,55,.10)}
+  @media(min-width:1400px){figure{border-radius:14px}}
+  .full-head{padding-bottom:0}
   figure img{display:block;width:100%;height:auto;cursor:zoom-in}
   figcaption{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;font-size:14px;color:var(--muted);border-top:1px solid #eee}
   figcaption b{color:var(--green)}
@@ -118,16 +120,20 @@
     <div class="pillar"><b>Ra quyết định</b><span>Báo cáo trực quan, cảnh báo kịp thời</span></div>
   </div>
 
-  <section id="ban-tin">
+  <section id="ban-tin" class="full-head">
     <h2>Bản tin AgriTech Việt</h2>
     <p class="sub">4 trang giới thiệu dự án, sản phẩm và lộ trình hợp tác. Chạm vào ảnh để phóng to.</p>
-    <div class="pages">
-      <figure><img src="images/trang-1.jpg" alt="Trang 1 – Giới thiệu dự án và AgriTech Việt" loading="eager" width="1241" height="1755"><figcaption><b>Trang 1</b> Giới thiệu dự án</figcaption></figure>
-      <figure><img src="images/trang-2.jpg" alt="Trang 2 – Hệ sinh thái sản phẩm và dịch vụ" loading="lazy" width="1241" height="1755"><figcaption><b>Trang 2</b> Hệ sinh thái sản phẩm &amp; dịch vụ</figcaption></figure>
-      <figure><img src="images/trang-3.jpg" alt="Trang 3 – Nền tảng công nghệ và lộ trình đổi mới" loading="lazy" width="1241" height="1755"><figcaption><b>Trang 3</b> Nền tảng công nghệ &amp; lộ trình</figcaption></figure>
-      <figure><img src="images/trang-4.jpg" alt="Trang 4 – Chuyển giao công nghệ và hợp tác" loading="lazy" width="1241" height="1755"><figcaption><b>Trang 4</b> Chuyển giao công nghệ &amp; hợp tác</figcaption></figure>
-    </div>
   </section>
+</div>
+
+    <div class="pages">
+      <figure><img src="images/trang-1.jpg" alt="Trang 1 – Giới thiệu dự án và AgriTech Việt" loading="eager" width="1820" height="2574"><figcaption><b>Trang 1</b> Giới thiệu dự án</figcaption></figure>
+      <figure><img src="images/trang-2.jpg" alt="Trang 2 – Hệ sinh thái sản phẩm và dịch vụ" loading="lazy" width="1820" height="2574"><figcaption><b>Trang 2</b> Hệ sinh thái sản phẩm &amp; dịch vụ</figcaption></figure>
+      <figure><img src="images/trang-3.jpg" alt="Trang 3 – Nền tảng công nghệ và lộ trình đổi mới" loading="lazy" width="1820" height="2574"><figcaption><b>Trang 3</b> Nền tảng công nghệ &amp; lộ trình</figcaption></figure>
+      <figure><img src="images/trang-4.jpg" alt="Trang 4 – Chuyển giao công nghệ và hợp tác" loading="lazy" width="1820" height="2574"><figcaption><b>Trang 4</b> Chuyển giao công nghệ &amp; hợp tác</figcaption></figure>
+    </div>
+
+<div class="wrap">
 
   <section id="app">
     <div class="app">
